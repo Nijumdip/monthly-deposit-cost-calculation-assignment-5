@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Deposit Cost Calculation</title>
+    <!-- add style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- add tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+       <!-- start header -->
+    <header>
+        <h1 class="text-5xl	text-center	mt-16 mb-8 font-semibold">Monthly Deposit Cost Calculation</h1>
+    </header>
+
+       <!-- start main -->
+    <main>
+
+        <!-- start section -->
+        <section class="flex">
+            <div>
+                <img src="https://abroadin.com/blog/wp-content/uploads/2021/04/Asset-27-1024x512.jpg" class="h-4/5 w-4/5" alt="">
+            </div>
+
+               <!-- start form -->
+            <div class="mb-8">
+                    <h2 class="text-center">Income</h2>
+                    <form class="p-2 ">
+                        <label>Income:</label>
+                            <input id="income" class=" border border-gray-400 rounded w-3/4 px-4 mb-4" type="text">
+                            <br>
+                        <label>Food:</label>
+                            <input id="food" class=" border border-gray-400 rounded w-3/4 px-4 mb-4" type="text">
+                            <br>
+                        <label>Rent:</label>
+                            <input id="rent" class="border border-gray-400 rounded w-3/4 px-4 mb-4" type="text">
+                            <br>
+                        <label>Clothes:</label>
+                            <input id="cloth" class="border border-gray-400 rounded w-3/4 px-4 mb-4" type="text">
+                            
+                        <div class="text-center">
+                            <button id="submit" class="bg-blue-500 rounded px-12 py-3 text-white font-medium ">Calculate</button>
+                            <h6>Total Expense: <span id="total-expense">5500</span> </h6>
+                            <h6>Balance: <span id="Balance">4500</span> </h6>
+                        </div>
+                        <p class="flex gap-4 py-2">
+                            <label>Save:</label>
+                            <input id="parcent" class="border border-gray-400 rounded w-2/4 px-4 " type="text">
+                            <button id="Save" class="bg-blue-500 rounded px-4 py-2 text-white font-medium ">Save</button>                       
+                        </p>
+                        <div class="text-center">
+                            <p>Saving Amount: <span id="saving-amount">5500</span> </p>
+                            <p>Remaining Balance: <span id="remaining-balance">4500</span> </p>
+                        </div>
+                    </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
