@@ -28,22 +28,69 @@ document.getElementById('Calculate-bttn').addEventListener('click', function (e)
     let totalExpense = document.getElementById('total-expense');
     totalExpense.innerText = sum;
     let totalExpenseNumber = Number(totalExpense.innerText);
-    console.log(totalExpenseNumber);
     // end total expense
 
     let balance = incomeInputNumber - totalExpenseNumber;
-    console.log(balance);
     // end balance
 
     let balanceText = document.getElementById('balance');
     balanceText.innerText = balance;
     let balanceNumber = Number(balanceText.innerText);
-    console.log(balanceNumber);
+    // end total balance
+
+    document.getElementById('Save-bttn').addEventListener('click', function (e) {
+        e.preventDefault();
+    
+        let parcentInput = document.getElementById('parcent-input');
+        let parcentInputText = parcentInput.value;
+        parcentInputNumber = Number(parcentInputText);
+
+    
+    
+        let saveNumber = balanceNumber * parcentInputNumber / 100;
+
+        let savingAmount = document.getElementById('saving-amount');
+        savingAmount.innerText = saveNumber;
+        let savingAmountNumber = Number(savingAmount.innerText);
+
+
+        let remainingBalance = balanceNumber - savingAmountNumber;
+
+        let totalRemainingBalance = document.getElementById('remaining-balance');
+        totalRemainingBalance.innerText = remainingBalance;
+        let totalRemainingBalanceNumber = Number(totalRemainingBalance.innerText);
+        console.log(totalRemainingBalanceNumber);
+    });
+
+
+
+
+
+
+
+
+
 
 
 
     totalPrice()
-})
+});
+
+// save button
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function totalPrice() {
     incomeInputNumber;
     foodInputNumber ;
