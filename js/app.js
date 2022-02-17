@@ -3,26 +3,43 @@ document.getElementById('Calculate-bttn').addEventListener('click', function (e)
     
     let incomeInput = document.getElementById('income-input');
     let incomeInputText = incomeInput.value;
+    var letters = /^[A-Za-z]+$/;
+    if (incomeInputText.match(letters)) {
+        alert('❌ Please give a Number.');
+    }
+    console.log(incomeInputText);
     incomeInputNumber = Number(incomeInputText);
+    
     // income field end
 
     let foodInput = document.getElementById('food-input');
     let foodInputText = foodInput.value;
+    var letters = /^[A-Za-z]+$/;
+    if (foodInputText.match(letters)) {
+        alert('❌ Please give a Number.');
+    }
     foodInputNumber = Number(foodInputText);
     // food input end
 
     let rentInput = document.getElementById('rent-input');
     let rentInputText = rentInput.value;
+    var letters = /^[A-Za-z]+$/;
+    if (rentInputText.match(letters)) {
+        alert('❌ Please give a Number.');
+    }
     rentInputNumber = Number(rentInputText);
     //  rent input end
 
     let clothInput = document.getElementById('cloth-input');
     let clothInputText = clothInput.value;
+    var letters = /^[A-Za-z]+$/;
+    if (clothInputText.match(letters)) {
+        alert('❌ Please give a Number.');
+    }
     clothInputNumber = Number(clothInputText);
     // cloth input end
 
     var sum = foodInputNumber + rentInputNumber + clothInputNumber;
-    console.log(sum);
     // sum end
 
     let totalExpense = document.getElementById('total-expense');
@@ -46,11 +63,11 @@ document.getElementById('Calculate-bttn').addEventListener('click', function (e)
         parcentInputNumber = Number(parcentInputText);
 
     
-    
         let saveNumber = balanceNumber * parcentInputNumber / 100;
 
         let savingAmount = document.getElementById('saving-amount');
         savingAmount.innerText = saveNumber;
+
         let savingAmountNumber = Number(savingAmount.innerText);
 
 
@@ -61,4 +78,6 @@ document.getElementById('Calculate-bttn').addEventListener('click', function (e)
         let totalRemainingBalanceNumber = Number(totalRemainingBalance.innerText);
         console.log(totalRemainingBalanceNumber);
     });
+
 });
+
