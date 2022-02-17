@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monthly Deposit Cost Calculation</title>
-    <!-- add style Sheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- add style Sheet
+    <link rel="stylesheet" href="css/style.css"> -->
     <!-- add tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -20,9 +20,9 @@
     <main>
 
         <!-- start section -->
-        <section class="lg:flex justify-items-center items-center mx-auto w-3/4">
+        <section class="lg:flex justify-items-center items-start mx-auto w-3/4">
             <div>
-                <img src="https://abroadin.com/blog/wp-content/uploads/2021/04/Asset-27-1024x512.jpg" class="sm:h-5/5 sm:w-5/5 lg:h-4/5 lg:w-4/5" alt="">
+                <img src="https://abroadin.com/blog/wp-content/uploads/2021/04/Asset-27-1024x512.jpg" class=" sm:w-5/5 lg:w-4/5" alt="">
             </div>
 
                <!-- start form -->
@@ -30,34 +30,40 @@
                     <h2 class="text-center">Income</h2>
                     <form class="p-2 text-right">
                         <label>Income:</label>
-                            <input id="income" class=" border border-gray-400 rounded w-3/4 px-4 mb-4" type="text">
+                            <input id="income-input" class=" border border-gray-400 rounded w-3/4 px-4 mb-4" type="text" placeholder="Enter your selary">
                             <br>
+                            <p class="text-center">Expence</p>
+
                         <label>Food:</label>
-                            <input id="food" class=" border border-gray-400 rounded w-3/4 px-4 mb-4" type="text">
+                            <input id="food-input" class=" border border-gray-400 rounded w-3/4 px-4 mb-4" type="text" placeholder="Enter food cost">
                             <br>
+
                         <label>Rent:</label>
-                            <input id="rent" class="border border-gray-400 rounded w-3/4 px-4 mb-4" type="text">
+                            <input id="rent-input" class="border border-gray-400 rounded w-3/4 px-4 mb-4" type="text" placeholder="Enter rent cost">
                             <br>
+
                         <label>Clothes:</label>
-                            <input id="cloth" class="border border-gray-400 rounded w-3/4 px-4 mb-4" type="text">
+                            <input id="cloth-input" class="border border-gray-400 rounded w-3/4 px-4 mb-4" type="text" placeholder="Enter cloth cost">
                             
                         <div class="text-center">
-                            <button id="submit" class="bg-blue-500 rounded px-12 py-3 text-white font-medium ">Calculate</button>
-                            <h6>Total Expense: <span id="total-expense">5500</span> </h6>
-                            <h6>Balance: <span id="Balance">4500</span> </h6>
+                            <button id="Calculate-bttn" class="bg-blue-500 rounded px-12 py-3 text-white font-medium ">Calculate</button>
+                            <h6>Total Expense: <span id="total-expense">00</span> </h6>
+                            <h6>Balance: <span id="balance">00</span> </h6>
                         </div>
                         <p class="flex gap-4 py-2">
                             <label>Save:</label>
-                            <input id="parcent" class="border border-gray-400 rounded w-2/4 px-4 " type="text">
+                            <input id="parcent-input" class="border border-gray-400 rounded w-2/4 px-4 " type="text" placeholder="Enter your Saving"> %
                             <button id="Save" class="bg-blue-500 rounded px-4 py-2 text-white font-medium ">Save</button>                       
                         </p>
                         <div class="text-center">
-                            <p>Saving Amount: <span id="saving-amount">5500</span> </p>
-                            <p>Remaining Balance: <span id="remaining-balance">4500</span> </p>
+                            <p>Saving Amount: <span id="saving-amount">00</span> </p>
+                            <p>Remaining Balance: <span id="remaining-balance">00</span> </p>
                         </div>
                     </form>
             </div>
         </section>
     </main>
+    <script src="js/test.js"></script>
+    <!-- <script src="js/app.js"></script> -->
 </body>
 </html>
